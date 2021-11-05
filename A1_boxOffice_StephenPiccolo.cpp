@@ -15,8 +15,8 @@ using namespace std;
 int main()
 {
 	// Define constants
-	const double ADULT_TKTPRICE = 14.50;
-	const double CHILD_TKTPRICE = 10.00;
+	const double ADULT_TKTPRICE = 14.50;    // Using price listed in constant
+	const double CHILD_TKTPRICE = 10.00;    // on assignment instructions
 	const double PERCENTAGE = 0.2;
 
 	// Define AND initialize variables with blank value
@@ -70,22 +70,22 @@ int main()
 	//Display information according to instructions on assignment
 	system("cls");
 	cout << "\n"
-		<< "BOX OFFICE FINANCIAL INFORMATION\n\n"
+		 << "BOX OFFICE FINANCIAL INFORMATION\n\n"
 
-		<< setw(25) << left << "Adult Tickets Sold:"
-		<< setw(15) << left << ticketsAdult << "\n"
-		<< setw(25) << left << "Child Tickets Sold:"
-		<< setw(15) << left << ticketsChild << "\n\n"
+		 << setw(39) << left << "Adult Tickets Sold:"
+		 << setw(15) << left << ticketsAdult << "\n"
+		 << setw(39) << left << "Child Tickets Sold:"
+		 << setw(15) << left << ticketsChild << "\n\n"
 
-		<< setw(25) << left << "Gross Sales Amount:"
-		<< setw(15) << left << setprecision(2) << fixed << showpoint <<
-		grossSales << "\n"
-		<< setw(25) << left << "Net Profit:"
-		<< setw(15) << left << setprecision(2) << fixed << showpoint <<
-		netProfit << "\n"
-		<< setw(25) << left << "Distributor Charges:"
-		<< setw(15) << left << setprecision(2) << fixed << showpoint <<
-		distributorCharge << "\n\n\n";
+		 << setw(25) << left << "Gross Sales Amount:"
+		 << setw(15) << right << "$" << left << setprecision(2) << fixed <<
+		 showpoint << grossSales << "\n"
+		 << setw(25) << left << "Net Profit:"
+		 << setw(15) << right << "$" << left << setprecision(2) << fixed <<
+		 showpoint << netProfit << "\n"
+		 << setw(25) << left << "Distributor Charges:"
+		 << setw(15) << right << "$" << left << setprecision(2) << fixed << showpoint <<
+		 distributorCharge << "\n\n\n";
 
 	cout << "Programmer Name: Stephen Piccolo\n" << endl;
 	system("pause");
